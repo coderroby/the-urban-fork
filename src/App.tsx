@@ -33,6 +33,8 @@ import { RestaurantData, MenuItem, UserReservation, UserContactMessage } from ".
 import restaurantData from "./restaurant-data.json";
 
 const CONFIG_STORAGE_KEY = "restaurant_config_override";
+const RESERVATIONS_STORAGE_KEY = "restaurant_reservations";
+const CONTACTS_STORAGE_KEY = "restaurant_contact_messages";
 
 export default function App() {
   const [data, setData] = useState<RestaurantData | null>(null);
@@ -135,6 +137,34 @@ export default function App() {
     }
   };
 
+  const createLocalId = (prefix: string) => {
+    const randomPart = typeof crypto !== "undefined" && "randomUUID" in crypto
+      ? crypto.randomUUID()
+      : `${Date.now()}-${Math.floor(Math.random() * 1000)}`;
+    return `${prefix}-${randomPart}`;
+  };
+
+  const readStoredList = <T,>(key: string): T[] => {
+    try {
+      const storedValue = localStorage.getItem(key);
+      return storedValue ? JSON.parse(storedValue) : [];
+    } catch {
+      return [];
+    }
+  };
+
+  const saveStoredList = <T,>(key: string, list: T[]) => {
+    localStorage.setItem(key, JSON.stringify(list));
+  };
+
+  const readJsonResponse = async (response: Response) => {
+    const contentType = response.headers.get("content-type") || "";
+    if (!contentType.includes("application/json")) {
+      throw new Error("The hosted API returned a non-JSON page instead of a form response.");
+    }
+    return response.json();
+  };
+
   // Load configuration and interactive lists from back-end server
   const loadConfig = async () => {
     try {
@@ -162,24 +192,28 @@ export default function App() {
     try {
       const res = await fetch("/api/reservations");
       if (res.ok) {
-        const history = await res.json();
+        const history = await readJsonResponse(res);
         setReservations(history);
+        return;
       }
     } catch (err) {
       console.error("Failed to load reservations", err);
     }
+    setReservations(readStoredList<UserReservation>(RESERVATIONS_STORAGE_KEY));
   };
 
   const loadContactMessages = async () => {
     try {
       const res = await fetch("/api/contact");
       if (res.ok) {
-        const history = await res.json();
+        const history = await readJsonResponse(res);
         setContacts(history);
+        return;
       }
     } catch (err) {
       console.error("Failed to load contact messages", err);
     }
+    setContacts(readStoredList<UserContactMessage>(CONTACTS_STORAGE_KEY));
   };
 
   useEffect(() => {
@@ -282,7 +316,11 @@ export default function App() {
       if (!response.ok) throw new Error("Could not update reservation status");
       loadReservations();
     } catch (error: any) {
-      alert("Error: " + error.message);
+      const updatedReservations = reservations.map((reservation) =>
+        reservation.id === id ? { ...reservation, status: nextStatus } : reservation
+      );
+      setReservations(updatedReservations);
+      saveStoredList(RESERVATIONS_STORAGE_KEY, updatedReservations);
     }
   };
 
@@ -297,7 +335,7 @@ export default function App() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(resForm)
       });
-      const resData = await response.json();
+      const resData = await readJsonResponse(response);
       if (!response.ok) {
         throw new Error(resData.error || "Fail to request reservation");
       }
@@ -314,7 +352,27 @@ export default function App() {
       });
       loadReservations();
     } catch (err: any) {
-      alert(err.message);
+      const newReservation: UserReservation = {
+        id: createLocalId("res"),
+        ...resForm,
+        guests: Number(resForm.guests),
+        createdAt: new Date().toISOString(),
+        status: "Pending"
+      };
+      const updatedReservations = [...reservations, newReservation];
+      setReservations(updatedReservations);
+      saveStoredList(RESERVATIONS_STORAGE_KEY, updatedReservations);
+      setResSuccess("Thank you! Reservation has been saved in this browser.");
+      setResForm({
+        name: "",
+        email: "",
+        phone: "",
+        date: "",
+        time: "18:00",
+        guests: 2,
+        occasion: "Dinner",
+        message: ""
+      });
     } finally {
       setResLoading(false);
     }
@@ -331,7 +389,7 @@ export default function App() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(contactForm)
       });
-      const resData = await response.json();
+      const resData = await readJsonResponse(response);
       if (!response.ok) {
         throw new Error(resData.error || "Fail to submit query");
       }
@@ -345,7 +403,22 @@ export default function App() {
       });
       loadContactMessages();
     } catch (err: any) {
-      alert(err.message);
+      const newMessage: UserContactMessage = {
+        id: createLocalId("msg"),
+        ...contactForm,
+        createdAt: new Date().toISOString()
+      };
+      const updatedMessages = [...contacts, newMessage];
+      setContacts(updatedMessages);
+      saveStoredList(CONTACTS_STORAGE_KEY, updatedMessages);
+      setContactSuccess("Thanks for reaching out. Your message has been saved in this browser.");
+      setContactForm({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: ""
+      });
     } finally {
       setContactLoading(false);
     }

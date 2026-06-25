@@ -1,0 +1,6 @@
+{
+  "name": "The Urban Fork",
+  "description": "A modern neighborhood restaurant serving seasonal dishes, handcrafted drinks, and cozy dining experiences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

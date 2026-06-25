@@ -1,0 +1,1561 @@
+{
+  "site": {
+    "name": {
+      "en": "The Urban Fork",
+      "fr": "La Fourchette Urbaine"
+    },
+    "legalName": {
+      "en": "The Urban Fork Restaurant Ltd.",
+      "fr": "La Fourchette Urbaine Restaurant Ltée."
+    },
+    "tagline": {
+      "en": "Fresh flavors, warm moments.",
+      "fr": "Des saveurs fraîches, des moments chaleureux."
+    },
+    "description": {
+      "en": "A modern neighborhood restaurant serving seasonal dishes, handcrafted drinks, and cozy dining experiences.",
+      "fr": "Un restaurant de quartier moderne servant des plats de saison, des boissons artisanales et des dîners chaleureux."
+    },
+    "baseUrl": "https://www.example-restaurant.com",
+    "defaultLocale": "en",
+    "currency": "USD",
+    "timezone": "America/New_York",
+    "theme": {
+      "primaryColor": "#8B2E20",
+      "secondaryColor": "#F5E8D8",
+      "accentColor": "#D99A3D",
+      "textColor": "#222222",
+      "backgroundColor": "#FFFFFF",
+      "fontHeading": "Playfair Display",
+      "fontBody": "Inter"
+    },
+    "logo": {
+      "light": "/images/logo-light.svg",
+      "dark": "/images/logo-dark.svg",
+      "alt": {
+        "en": "The Urban Fork logo",
+        "fr": "Logo de La Fourchette Urbaine"
+      }
+    },
+    "favicon": "/images/favicon.ico",
+    "socialLinks": [
+      {
+        "platform": "Facebook",
+        "url": "https://facebook.com/example"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://instagram.com/example"
+      },
+      {
+        "platform": "TikTok",
+        "url": "https://tiktok.com/@example"
+      }
+    ]
+  },
+  "business": {
+    "phone": "+1 555 123 4567",
+    "email": "hello@example-restaurant.com",
+    "reservationEmail": "reservations@example-restaurant.com",
+    "address": {
+      "street": {
+        "en": "123 Main Street",
+        "fr": "123 Rue Principale"
+      },
+      "city": {
+        "en": "New York",
+        "fr": "New York"
+      },
+      "state": {
+        "en": "NY",
+        "fr": "NY"
+      },
+      "postalCode": "10001",
+      "country": {
+        "en": "USA",
+        "fr": "États-Unis"
+      },
+      "mapUrl": "https://maps.google.com/?q=123+Main+Street+New+York+NY",
+      "latitude": 40.7128,
+      "longitude": -74.006
+    },
+    "openingHours": [
+      {
+        "day": {
+          "en": "Monday",
+          "fr": "Lundi"
+        },
+        "open": "11:00",
+        "close": "22:00",
+        "closed": false
+      },
+      {
+        "day": {
+          "en": "Tuesday",
+          "fr": "Mardi"
+        },
+        "open": "11:00",
+        "close": "22:00",
+        "closed": false
+      },
+      {
+        "day": {
+          "en": "Wednesday",
+          "fr": "Mercredi"
+        },
+        "open": "11:00",
+        "close": "22:00",
+        "closed": false
+      },
+      {
+        "day": {
+          "en": "Thursday",
+          "fr": "Jeudi"
+        },
+        "open": "11:00",
+        "close": "22:00",
+        "closed": false
+      },
+      {
+        "day": {
+          "en": "Friday",
+          "fr": "Vendredi"
+        },
+        "open": "11:00",
+        "close": "23:00",
+        "closed": false
+      },
+      {
+        "day": {
+          "en": "Saturday",
+          "fr": "Samedi"
+        },
+        "open": "10:00",
+        "close": "23:00",
+        "closed": false
+      },
+      {
+        "day": {
+          "en": "Sunday",
+          "fr": "Dimanche"
+        },
+        "open": "10:00",
+        "close": "21:00",
+        "closed": false
+      }
+    ],
+    "serviceOptions": {
+      "dineIn": true,
+      "takeaway": true,
+      "delivery": true,
+      "catering": true,
+      "privateEvents": true
+    }
+  },
+  "navigation": {
+    "header": [
+      {
+        "label": {
+          "en": "Home",
+          "fr": "Accueil"
+        },
+        "href": "/"
+      },
+      {
+        "label": {
+          "en": "Menu",
+          "fr": "Menu"
+        },
+        "href": "/menu"
+      },
+      {
+        "label": {
+          "en": "About",
+          "fr": "À Propos"
+        },
+        "href": "/about"
+      },
+      {
+        "label": {
+          "en": "Gallery",
+          "fr": "Galerie"
+        },
+        "href": "/gallery"
+      },
+      {
+        "label": {
+          "en": "Reservations",
+          "fr": "Réservations"
+        },
+        "href": "/reservations"
+      },
+      {
+        "label": {
+          "en": "Contact",
+          "fr": "Contact"
+        },
+        "href": "/contact"
+      }
+    ],
+    "footer": [
+      {
+        "label": {
+          "en": "Privacy Policy",
+          "fr": "Politique de Confidentialité"
+        },
+        "href": "/privacy-policy"
+      },
+      {
+        "label": {
+          "en": "Terms & Conditions",
+          "fr": "Conditions Générales"
+        },
+        "href": "/terms"
+      },
+      {
+        "label": {
+          "en": "Careers",
+          "fr": "Carrières"
+        },
+        "href": "/careers"
+      }
+    ],
+    "cta": {
+      "label": {
+        "en": "Book a Table",
+        "fr": "Réserver"
+      },
+      "href": "/reservations"
+    }
+  },
+  "globalSeo": {
+    "titleTemplate": {
+      "en": "%s | The Urban Fork",
+      "fr": "%s | La Fourchette Urbaine"
+    },
+    "defaultTitle": {
+      "en": "The Urban Fork | Modern Restaurant & Dining",
+      "fr": "La Fourchette Urbaine | Restaurant Moderne & Gastronomie"
+    },
+    "defaultDescription": {
+      "en": "Visit The Urban Fork for seasonal dishes, handcrafted drinks, private events, and warm hospitality.",
+      "fr": "Visitez La Fourchette Urbaine pour des plats de saison, des boissons artisanales, des événements privés et un accueil chaleureux."
+    },
+    "defaultKeywords": [
+      {
+        "en": "restaurant",
+        "fr": "restaurant"
+      },
+      {
+        "en": "modern restaurant",
+        "fr": "restaurant moderne"
+      },
+      {
+        "en": "dining",
+        "fr": "repas"
+      },
+      {
+        "en": "food",
+        "fr": "nourriture"
+      },
+      {
+        "en": "reservations",
+        "fr": "réservations"
+      },
+      {
+        "en": "private events",
+        "fr": "événements privés"
+      }
+    ],
+    "defaultOgImage": "/images/seo/og-default.jpg",
+    "twitterCard": "summary_large_image",
+    "robots": {
+      "index": true,
+      "follow": true
+    }
+  },
+  "pages": [
+    {
+      "id": "home",
+      "route": "/",
+      "template": "HomePage",
+      "seo": {
+        "title": {
+          "en": "Modern Restaurant & Dining",
+          "fr": "Restaurant Moderne & Gastronomie"
+        },
+        "description": {
+          "en": "Enjoy seasonal food, handcrafted drinks, and memorable dining at The Urban Fork.",
+          "fr": "Profitez de plats de saison, de boissons artisanales et de dîners mémorables à La Fourchette Urbaine."
+        },
+        "canonical": "/",
+        "ogImage": "/images/seo/home-og.jpg"
+      },
+      "sections": {
+        "hero": {
+          "eyebrow": {
+            "en": "Welcome to The Urban Fork",
+            "fr": "Bienvenue à La Fourchette Urbaine"
+          },
+          "title": {
+            "en": "Fresh seasonal food made for sharing.",
+            "fr": "Cuisine fraîche de saison faite à partager."
+          },
+          "subtitle": {
+            "en": "A warm neighborhood restaurant serving modern comfort food, curated drinks, and unforgettable moments.",
+            "fr": "Un de quartier chaleureux proposant une cuisine réconfortante, des boissons soignées et des moments inoubliables."
+          },
+          "backgroundImage": {
+            "src": "/images/home/hero-restaurant.jpg",
+            "alt": {
+              "en": "Elegant restaurant table with fresh food",
+              "fr": "Table de restaurant élégante avec des plats frais"
+            }
+          },
+          "buttons": [
+            {
+              "label": {
+                "en": "View Menu",
+                "fr": "Voir le Menu"
+              },
+              "href": "/menu",
+              "variant": "primary"
+            },
+            {
+              "label": {
+                "en": "Book a Table",
+                "fr": "Réserver une Table"
+              },
+              "href": "/reservations",
+              "variant": "secondary"
+            }
+          ]
+        },
+        "featuredMenu": {
+          "title": {
+            "en": "Guest Favorites",
+            "fr": "Favoris des Clients"
+          },
+          "subtitle": {
+            "en": "Our most-loved dishes, prepared fresh every day.",
+            "fr": "Nos plats les plus appréciés, préparés frais chaque jour."
+          },
+          "menuItemIds": [
+            "starter-bruschetta",
+            "main-grilled-salmon",
+            "main-ribeye-steak",
+            "dessert-cheesecake"
+          ]
+        },
+        "aboutPreview": {
+          "title": {
+            "en": "Food with heart, served with care.",
+            "fr": "Une cuisine du cœur, servie avec soin."
+          },
+          "content": {
+            "en": "We believe good food should feel honest, comforting, and memorable. Our kitchen uses fresh ingredients and simple techniques to create dishes full of flavor.",
+            "fr": "Nous croyons qu'une bonne cuisine doit être sincère, réconfortante et mémorable. Notre chef utilise des ingrédients frais et des techniques simples pour créer des plats riches en saveur."
+          },
+          "image": {
+            "src": "/images/home/chef-plating.jpg",
+            "alt": {
+              "en": "Chef plating a restaurant dish",
+              "fr": "Chef dressant un plat"
+            }
+          },
+          "button": {
+            "label": {
+              "en": "Our Story",
+              "fr": "Notre Histoire"
+            },
+            "href": "/about"
+          }
+        },
+        "reservationBanner": {
+          "title": {
+            "en": "Planning dinner tonight?",
+            "fr": "Vous prévoyez de dîner ce soir ?"
+          },
+          "subtitle": {
+            "en": "Reserve your table online in less than a minute.",
+            "fr": "Réservez votre table en ligne en moins d'une minute."
+          },
+          "button": {
+            "label": {
+              "en": "Make Reservation",
+              "fr": "Faire une Réservation"
+            },
+            "href": "/reservations"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu",
+      "route": "/menu",
+      "template": "MenuPage",
+      "seo": {
+        "title": {
+          "en": "Menu",
+          "fr": "Menu"
+        },
+        "description": {
+          "en": "Explore The Urban Fork menu including starters, mains, desserts, drinks, vegetarian options, and chef specials.",
+          "fr": "Découvrez le menu de La Fourchette Urbaine : entrées, plats, desserts, boissons, options végétariennes."
+        },
+        "canonical": "/menu",
+        "ogImage": "/images/seo/menu-og.jpg"
+      },
+      "sections": {
+        "hero": {
+          "title": {
+            "en": "Our Menu",
+            "fr": "Notre Menu"
+          },
+          "subtitle": {
+            "en": "Seasonal dishes, fresh ingredients, and bold flavors.",
+            "fr": "Plats de saison, ingrédients frais et saveurs audacieuses."
+          },
+          "backgroundImage": {
+            "src": "/images/menu/menu-hero.jpg",
+            "alt": {
+              "en": "Restaurant menu dishes on a table",
+              "fr": "Plats de restaurant sur une table"
+            }
+          }
+        },
+        "showFilters": true,
+        "showDietaryBadges": true
+      }
+    },
+    {
+      "id": "about",
+      "route": "/about",
+      "template": "AboutPage",
+      "seo": {
+        "title": {
+          "en": "About Us",
+          "fr": "À Propos"
+        },
+        "description": {
+          "en": "Learn about The Urban Fork, our food philosophy, kitchen team, and hospitality story.",
+          "fr": "Découvrez notre philosophie culinaire, notre équipe et notre parcours."
+        },
+        "canonical": "/about",
+        "ogImage": "/images/seo/about-og.jpg"
+      },
+      "sections": {
+        "hero": {
+          "title": {
+            "en": "Our Story",
+            "fr": "Notre Histoire"
+          },
+          "subtitle": {
+            "en": "A restaurant built around comfort, craft, and community.",
+            "fr": "Un restaurant bâti sur le confort, le savoir-faire et la communauté."
+          },
+          "image": {
+            "src": "/images/about/restaurant-team.jpg",
+            "alt": {
+              "en": "The Urban Fork restaurant team",
+              "fr": "L'équipe de La Fourchette Urbaine"
+            }
+          }
+        },
+        "story": {
+          "title": {
+            "en": "Inspired by simple food done beautifully.",
+            "fr": "Inspiré par une cuisine simple et magnifiquement exécutée."
+          },
+          "content": [
+            {
+              "en": "The Urban Fork started with one idea: create a place where people can slow down, share good food, and feel at home.",
+              "fr": "La Fourchette Urbaine est née d'une idée : créer un lieu où l'on peut ralentir, savourer de bons petits plats et se sentir comme chez soi."
+            },
+            {
+              "en": "Our menu changes with the seasons and focuses on fresh produce, quality proteins, house-made sauces, and thoughtful details.",
+              "fr": "Notre menu évolue au gré des saisons et met à l'honneur les produits frais, les protéines de qualité et les sauces faites maison."
+            }
+          ]
+        },
+        "values": [
+          {
+            "title": {
+              "en": "Fresh Ingredients",
+              "fr": "Ingrédients Frais"
+            },
+            "description": {
+              "en": "We work with trusted suppliers and seasonal produce whenever possible.",
+              "fr": "Nous collaborons avec des producteurs de confiance pour de savoureux produits de saison."
+            }
+          },
+          {
+            "title": {
+              "en": "Warm Hospitality",
+              "fr": "Hospitalité Chaleureuse"
+            },
+            "description": {
+              "en": "From your first greeting to your final bite, we want every visit to feel personal.",
+              "fr": "Dès votre arrivée et jusqu'au dessert, nous voulons que chaque instant soit mémorable."
+            }
+          },
+          {
+            "title": {
+              "en": "Crafted Experience",
+              "fr": "Expérience Soignée"
+            },
+            "description": {
+              "en": "Food, drinks, music, lighting, and service all work together to create the right mood.",
+              "fr": "Les plats, les boissons, la musique et le service s'accordent pour sublimer l'ambiance."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gallery",
+      "route": "/gallery",
+      "template": "GalleryPage",
+      "seo": {
+        "title": {
+          "en": "Gallery",
+          "fr": "Galerie"
+        },
+        "description": {
+          "en": "View photos of The Urban Fork restaurant, dishes, drinks, dining room, and private events.",
+          "fr": "Découvrez en photos nos magnifiques plats, notre salle de restauration et nos événements."
+        },
+        "canonical": "/gallery",
+        "ogImage": "/images/seo/gallery-og.jpg"
+      },
+      "sections": {
+        "hero": {
+          "title": {
+            "en": "Gallery",
+            "fr": "Galerie"
+          },
+          "subtitle": {
+            "en": "A look inside our food, space, and special moments.",
+            "fr": "Un coup d'œil sur nos plats, notre salle et nos moments clés."
+          }
+        }
+      }
+    },
+    {
+      "id": "reservations",
+      "route": "/reservations",
+      "template": "ReservationsPage",
+      "seo": {
+        "title": {
+          "en": "Reservations",
+          "fr": "Réservations"
+        },
+        "description": {
+          "en": "Book a table online at The Urban Fork for lunch, dinner, weekend brunch, or private dining.",
+          "fr": "Réservez en ligne pour le déjeuner, le dîner ou un événement spécial de groupe."
+        },
+        "canonical": "/reservations",
+        "ogImage": "/images/seo/reservations-og.jpg"
+      },
+      "sections": {
+        "hero": {
+          "title": {
+            "en": "Book a Table",
+            "fr": "Réserver une Table"
+          },
+          "subtitle": {
+            "en": "Reserve your table and we’ll take care of the rest.",
+            "fr": "Réservez votre table et laissez-nous veiller sur le reste."
+          }
+        },
+        "form": {
+          "fields": [
+            "name",
+            "email",
+            "phone",
+            "date",
+            "time",
+            "guests",
+            "occasion",
+            "message"
+          ],
+          "successMessage": {
+            "en": "Thank you! Your reservation request has been received.",
+            "fr": "Merci ! Votre demande de réservation a bien été reçue."
+          },
+          "submitLabel": {
+            "en": "Request Reservation",
+            "fr": "Envoyer la Demande"
+          }
+        },
+        "reservationPolicy": {
+          "title": {
+            "en": "Reservation Policy",
+            "fr": "Politique de Réservation"
+          },
+          "content": {
+            "en": "For parties of 8 or more, please contact us directly. Reservations are held for 15 minutes after the scheduled time.",
+            "fr": "Pour les groupes de plus de 8 personnes, merci de nous contacter. Les tables sont gardées 15 minutes après l'heure."
+          }
+        }
+      }
+    },
+    {
+      "id": "contact",
+      "route": "/contact",
+      "template": "ContactPage",
+      "seo": {
+        "title": {
+          "en": "Contact",
+          "fr": "Contact"
+        },
+        "description": {
+          "en": "Contact The Urban Fork for reservations, events, catering, directions, and general questions.",
+          "fr": "Contactez l'équipe pour coordonner un service traiteur ou poser vos questions."
+        },
+        "canonical": "/contact",
+        "ogImage": "/images/seo/contact-og.jpg"
+      },
+      "sections": {
+        "hero": {
+          "title": {
+            "en": "Contact Us",
+            "fr": "Contactez-nous"
+          },
+          "subtitle": {
+            "en": "Questions, events, catering, or directions — we’re happy to help.",
+            "fr": "Des questions, un service traiteur ou des indications ? Écrivez-nous !"
+          }
+        },
+        "form": {
+          "fields": [
+            "name",
+            "email",
+            "phone",
+            "subject",
+            "message"
+          ],
+          "successMessage": {
+            "en": "Thanks for reaching out. We’ll get back to you soon.",
+            "fr": "Merci pour votre message. Nous vous répondrons très rapidement."
+          },
+          "submitLabel": {
+            "en": "Send Message",
+            "fr": "Envoyer la Demande"
+          }
+        }
+      }
+    },
+    {
+      "id": "privacy-policy",
+      "route": "/privacy-policy",
+      "template": "LegalPage",
+      "seo": {
+        "title": {
+          "en": "Privacy Policy",
+          "fr": "Politique de Confidentialité"
+        },
+        "description": {
+          "en": "Read The Urban Fork privacy policy.",
+          "fr": "Lisez notre politique de confidentialité."
+        },
+        "canonical": "/privacy-policy",
+        "ogImage": "/images/seo/default-og.jpg",
+        "robots": {
+          "index": false,
+          "follow": true
+        }
+      },
+      "sections": {
+        "content": {
+          "title": {
+            "en": "Privacy Policy",
+            "fr": "Politique de Confidentialité"
+          },
+          "lastUpdated": "2026-06-21",
+          "body": [
+            {
+              "en": "This privacy policy explains how we collect, use, and protect information submitted through our website forms.",
+              "fr": "Cette politique de confidentialité explique comment nous traitons et protégeons les données soumises via nos formulaires."
+            },
+            {
+              "en": "We only use your information to respond to requests, manage reservations, and improve our service.",
+              "fr": "Vos informations servent uniquement à coordonner les réservations et répondre à vos demandes."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "menu": {
+    "categories": [
+      {
+        "id": "starters",
+        "name": {
+          "en": "Starters",
+          "fr": "Entrées"
+        },
+        "description": {
+          "en": "Small plates to begin your meal.",
+          "fr": "De délicieuses mises en bouche pour débuter."
+        },
+        "displayOrder": 1
+      },
+      {
+        "id": "mains",
+        "name": {
+          "en": "Mains",
+          "fr": "Plats"
+        },
+        "description": {
+          "en": "Signature plates and hearty favorites.",
+          "fr": "Nos plats signatures et valeurs sûres de la table."
+        },
+        "displayOrder": 2
+      },
+      {
+        "id": "desserts",
+        "name": {
+          "en": "Desserts",
+          "fr": "Desserts"
+        },
+        "description": {
+          "en": "Sweet finishes made in-house.",
+          "fr": "Une touche de douceur faite maison."
+        },
+        "displayOrder": 3
+      },
+      {
+        "id": "drinks",
+        "name": {
+          "en": "Drinks",
+          "fr": "Boissons"
+        },
+        "description": {
+          "en": "Cocktails, mocktails, wine, coffee, and soft drinks.",
+          "fr": "Cocktails, cafés, vins fins et options rafraîchissantes."
+        },
+        "displayOrder": 4
+      }
+    ],
+    "items": [
+      {
+        "id": "starter-bruschetta",
+        "categoryId": "starters",
+        "name": {
+          "en": "Tomato Basil Bruschetta",
+          "fr": "Bruschetta Tomate Basilic"
+        },
+        "description": {
+          "en": "Toasted sourdough, marinated tomatoes, basil, garlic, olive oil, and balsamic glaze.",
+          "fr": "Pain de campagne toasté, tomates marinées, basilic frais, ail, huile d'olive et tombée de caramel de balsamique."
+        },
+        "price": 12,
+        "currency": "USD",
+        "image": {
+          "src": "/images/menu/bruschetta.jpg",
+          "alt": {
+            "en": "Tomato basil bruschetta",
+            "fr": "Bruschetta de tomates au basilic"
+          }
+        },
+        "badges": [
+          {
+            "en": "Vegetarian",
+            "fr": "Végétarien"
+          }
+        ],
+        "allergens": [
+          {
+            "en": "Gluten",
+            "fr": "Gluten"
+          }
+        ],
+        "isFeatured": true,
+        "isAvailable": true
+      },
+      {
+        "id": "starter-calamari",
+        "categoryId": "starters",
+        "name": {
+          "en": "Crispy Calamari",
+          "fr": "Calmars Croustillants"
+        },
+        "description": {
+          "en": "Lightly fried calamari with lemon aioli and house marinara.",
+          "fr": "Calmars légèrement frits servis avec une sauce aïoli au citron et marinara de la maison."
+        },
+        "price": 16,
+        "currency": "USD",
+        "image": {
+          "src": "/images/menu/calamari.jpg",
+          "alt": {
+            "en": "Crispy calamari with dipping sauces",
+            "fr": "Calmars croustillants et sauces"
+          }
+        },
+        "badges": [],
+        "allergens": [
+          {
+            "en": "Seafood",
+            "fr": "Fruits de Mer"
+          },
+          {
+            "en": "Gluten",
+            "fr": "Gluten"
+          },
+          {
+            "en": "Egg",
+            "fr": "Œuf"
+          }
+        ],
+        "isFeatured": false,
+        "isAvailable": true
+      },
+      {
+        "id": "main-grilled-salmon",
+        "categoryId": "mains",
+        "name": {
+          "en": "Herb Grilled Salmon",
+          "fr": "Saumon Grillé aux Herbes"
+        },
+        "description": {
+          "en": "Atlantic salmon with lemon herb butter, roasted vegetables, and garlic mashed potatoes.",
+          "fr": "Pavé de saumon de l'Atlantique, beurre d'herbes au citron, poêlée de légumes forestiers et écrasé de pommes de terre à l'ail."
+        },
+        "price": 28,
+        "currency": "USD",
+        "image": {
+          "src": "/images/menu/grilled-salmon.jpg",
+          "alt": {
+            "en": "Herb grilled salmon plate",
+            "fr": "Assiette de pavé de saumon grillé"
+          }
+        },
+        "badges": [
+          {
+            "en": "Gluten Free",
+            "fr": "Sans Gluten"
+          }
+        ],
+        "allergens": [
+          {
+            "en": "Fish",
+            "fr": "Poisson"
+          },
+          {
+            "en": "Dairy",
+            "fr": "Laitage"
+          }
+        ],
+        "isFeatured": true,
+        "isAvailable": true
+      },
+      {
+        "id": "main-ribeye-steak",
+        "categoryId": "mains",
+        "name": {
+          "en": "Chargrilled Ribeye Steak",
+          "fr": "Entrecôte Grillée à la Flamme"
+        },
+        "description": {
+          "en": "12 oz ribeye steak with peppercorn sauce, fries, and seasonal greens.",
+          "fr": "Copieuse pièce de bœuf grillée au charbon, sauce onctueuse au poivre vert, frites et petits légumes de saison."
+        },
+        "price": 38,
+        "currency": "USD",
+        "image": {
+          "src": "/images/menu/ribeye-steak.jpg",
+          "alt": {
+            "en": "Chargrilled/barbecued high-end steak",
+            "fr": "Entrecôte grillée haut de gamme"
+          }
+        },
+        "badges": [
+          {
+            "en": "Chef Special",
+            "fr": "Spécialité du Chef"
+          }
+        ],
+        "allergens": [
+          {
+            "en": "Dairy",
+            "fr": "Laitage"
+          }
+        ],
+        "isFeatured": true,
+        "isAvailable": true
+      },
+      {
+        "id": "main-mushroom-risotto",
+        "categoryId": "mains",
+        "name": {
+          "en": "Wild Mushroom Risotto",
+          "fr": "Risotto aux Champignons Sauvages"
+        },
+        "description": {
+          "en": "Creamy arborio rice with wild mushrooms, parmesan, herbs, and truffle oil.",
+          "fr": "Riz arborio crémeux, sélection de champignons des bois, copeaux de parmesan, herbes fraîches et filet d'huile de truffe blanche."
+        },
+        "price": 24,
+        "currency": "USD",
+        "image": {
+          "src": "/images/menu/mushroom-risotto.jpg",
+          "alt": {
+            "en": "Creamy wild mushroom arborio risotto plate",
+            "fr": "Assiette crémeuse de risotto aux champignons"
+          }
+        },
+        "badges": [
+          {
+            "en": "Vegetarian",
+            "fr": "Végétarien"
+          }
+        ],
+        "allergens": [
+          {
+            "en": "Dairy",
+            "fr": "Laitage"
+          }
+        ],
+        "isFeatured": false,
+        "isAvailable": true
+      },
+      {
+        "id": "dessert-cheesecake",
+        "categoryId": "desserts",
+        "name": {
+          "en": "New York Cheesecake",
+          "fr": "Cheesecake de New York"
+        },
+        "description": {
+          "en": "Classic cheesecake with berry compote and vanilla cream.",
+          "fr": "Traditionnel gâteau au fromage crémeux, coulis de baies sauvages acidulé et nuage de chantilly parfumée à la vanille bourbon."
+        },
+        "price": 10,
+        "currency": "USD",
+        "image": {
+          "src": "/images/menu/cheesecake.jpg",
+          "alt": {
+            "en": "Delicious piece of cheesecake topping with raspberry syrup",
+            "fr": "Part savoureuse de cheesecake au coulis de fruits rouges"
+          }
+        },
+        "badges": [
+          {
+            "en": "Popular",
+            "fr": "Populaire"
+          }
+        ],
+        "allergens": [
+          {
+            "en": "Dairy",
+            "fr": "Laitage"
+          },
+          {
+            "en": "Egg",
+            "fr": "Œuf"
+          },
+          {
+            "en": "Gluten",
+            "fr": "Gluten"
+          }
+        ],
+        "isFeatured": true,
+        "isAvailable": true
+      },
+      {
+        "id": "drink-signature-mocktail",
+        "categoryId": "drinks",
+        "name": {
+          "en": "Citrus Garden Mocktail",
+          "fr": "Mocktail Jardin d'Agrumes"
+        },
+        "description": {
+          "en": "Fresh citrus, mint, cucumber, soda, and house-made syrup.",
+          "fr": "Pressée d'agrumes, feuilles de menthe fraîche, concombre, soda à bulles et sirop floral fait maison."
+        },
+        "price": 9,
+        "currency": "USD",
+        "image": {
+          "src": "/images/menu/citrus-mocktail.jpg",
+          "alt": {
+            "en": "Citrus mocktail premium glass on bar counters",
+            "fr": "Verre de mocktail haut de gamme sur le comptoir"
+          }
+        },
+        "badges": [
+          {
+            "en": "Non-Alcoholic",
+            "fr": "Sans Alcool"
+          }
+        ],
+        "allergens": [],
+        "isFeatured": false,
+        "isAvailable": true
+      }
+    ]
+  },
+  "gallery": [
+    {
+      "id": "gallery-1",
+      "category": "Food",
+      "src": "/images/gallery/dish-1.jpg",
+      "alt": "Signature restaurant dish",
+      "caption": {
+        "en": "Seasonal chef special",
+        "fr": "Spécialité créative de saison"
+      }
+    },
+    {
+      "id": "gallery-2",
+      "category": "Interior",
+      "src": "/images/gallery/interior-1.jpg",
+      "alt": "Warm modern restaurant interior",
+      "caption": {
+        "en": "Main dining room of restaurant",
+        "fr": "Salle de réception principale de l'établissement"
+      }
+    },
+    {
+      "id": "gallery-3",
+      "category": "Drinks",
+      "src": "/images/gallery/drink-1.jpg",
+      "alt": "Handcrafted drink on bar counter",
+      "caption": {
+        "en": "House-made specialty drinks",
+        "fr": "Cocktails et apéritifs uniques faits maison"
+      }
+    },
+    {
+      "id": "gallery-4",
+      "category": "Events",
+      "src": "/images/gallery/event-1.jpg",
+      "alt": "Private event dinner setup",
+      "caption": {
+        "en": "Private dining and events planning",
+        "fr": "Dîner de groupe privé et réceptions"
+      }
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "review-1",
+      "name": "Sarah M.",
+      "rating": 5,
+      "text": {
+        "en": "The food was beautiful, the service was warm, and the atmosphere was perfect for dinner with friends.",
+        "fr": "La cuisine était sublime, le service attentionné, et l'atmosphère tout simplement parfaite pour se retrouver entre amis."
+      }
+    },
+    {
+      "id": "review-2",
+      "name": "Daniel R.",
+      "rating": 5,
+      "text": {
+        "en": "One of our favorite restaurants. The menu feels fresh every time we visit.",
+        "fr": "Une adresse incontournable pour nous. La carte offre un vent de fraîcheur culinaire à chaque visite."
+      }
+    },
+    {
+      "id": "review-3",
+      "name": "Emily K.",
+      "rating": 4,
+      "text": {
+        "en": "Great flavors, lovely space, and very friendly staff.",
+        "fr": "De belles saveurs, un espace admirablement décoré et un accueil des plus prévenants."
+      }
+    }
+  ],
+  "promotions": [
+    {
+      "id": "happy-hour",
+      "title": {
+        "en": "Weekday Happy Hour",
+        "fr": "Happy Hour en Semaine"
+      },
+      "description": {
+        "en": "Enjoy selected drinks and small plates every Monday to Friday from 4 PM to 6 PM.",
+        "fr": "Savourez des amuse-bouches et boissons à prix doux, du lundi au vendredi de 16h à 18h."
+      },
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31",
+      "image": {
+        "src": "/images/promotions/happy-hour.jpg",
+        "alt": "Happy hour drinks"
+      },
+      "button": {
+        "label": {
+          "en": "View Menu",
+          "fr": "Consulter l'Ardoise"
+        },
+        "href": "/menu"
+      },
+      "isActive": true
+    }
+  ],
+  "events": [
+    {
+      "id": "private-dining",
+      "title": {
+        "en": "Private Dining",
+        "fr": "Salons Privés"
+      },
+      "description": {
+        "en": "Host birthdays, business dinners, family gatherings, and special occasions in our private dining area.",
+        "fr": "Célébrez anniversaires, dîners de direction corporatifs, grands rassemblements et occasions mémorables."
+      },
+      "image": {
+        "src": "/images/events/private-dining.jpg",
+        "alt": "Private dining room"
+      },
+      "button": {
+        "label": {
+          "en": "Contact Us",
+          "fr": "Entrer en Relation"
+        },
+        "href": "/contact"
+      }
+    },
+    {
+      "id": "catering",
+      "title": {
+        "en": "Catering",
+        "fr": "Traiteur Événementiel"
+      },
+      "description": {
+        "en": "Bring The Urban Fork experience to your office, home, or event venue.",
+        "fr": "Invitez la signature culinaire de La Fourchette Urbaine au bureau, chez vous ou en extérieur."
+      },
+      "image": {
+        "src": "/images/events/catering.jpg",
+        "alt": "Catering display"
+      },
+      "button": {
+        "label": {
+          "en": "Ask About Catering",
+          "fr": "Demander un Devis"
+        },
+        "href": "/contact"
+      }
+    }
+  ],
+  "forms": {
+    "reservation": {
+      "endpoint": "/api/reservations",
+      "method": "POST",
+      "requiredFields": [
+        "name",
+        "email",
+        "phone",
+        "date",
+        "time",
+        "guests"
+      ]
+    },
+    "contact": {
+      "endpoint": "/api/contact",
+      "method": "POST",
+      "requiredFields": [
+        "name",
+        "email",
+        "message"
+      ]
+    }
+  },
+  "schemaOrg": {
+    "type": "Restaurant",
+    "servesCuisine": [
+      "Modern American",
+      "Seasonal",
+      "Comfort Food"
+    ],
+    "priceRange": "$$",
+    "acceptsReservations": true,
+    "hasMenu": "https://www.example-restaurant.com/menu"
+  },
+  "uiTranslations": {
+    "Dining Hours": {
+      "en": "Dining Hours",
+      "fr": "Horaires de Service"
+    },
+    "Dining Room": {
+      "en": "Dining Room",
+      "fr": "Salle principale"
+    },
+    "Food": {
+      "en": "Food",
+      "fr": "Cuisine"
+    },
+    "Interior": {
+      "en": "Interior",
+      "fr": "Intérieur"
+    },
+    "Desserts": {
+      "en": "Desserts",
+      "fr": "Desserts Gourmands"
+    },
+    "Drinks": {
+      "en": "Drinks",
+      "fr": "Boissons & Alcools"
+    },
+    "Events": {
+      "en": "Events",
+      "fr": "Événements"
+    },
+    "Special Occasion": {
+      "en": "Special Occasion",
+      "fr": "Occasion Spéciale"
+    },
+    "Custom Dietary Notes or Requests": {
+      "en": "Custom Dietary Notes or Requests",
+      "fr": "Besoin d'un aménagement ou note diététique ?"
+    },
+    "Reserved Date": {
+      "en": "Reserved Date",
+      "fr": "Date Souhaitée"
+    },
+    "Hour Time Slot": {
+      "en": "Hour Time Slot",
+      "fr": "Heure du Service"
+    },
+    "Number of Guests": {
+      "en": "Number of Guests",
+      "fr": "Nombre de Convives"
+    },
+    "Request Reservation": {
+      "en": "Request Reservation",
+      "fr": "Soumettre la Réservation"
+    },
+    "* Your Name": {
+      "en": "* Your Name",
+      "fr": "* Votre Nom"
+    },
+    "* Your Full Name": {
+      "en": "* Your Full Name",
+      "fr": "* Votre Nom Complet"
+    },
+    "* Email Address": {
+      "en": "* Email Address",
+      "fr": "* Votre Adresse E-mail"
+    },
+    "Phone Number": {
+      "en": "Phone Number",
+      "fr": "Numéro de Téléphone"
+    },
+    "Our Location": {
+      "en": "Our Location",
+      "fr": "Notre Situation"
+    },
+    "Call Us Directly": {
+      "en": "Call Us Directly",
+      "fr": "Notre Ligne Administrative"
+    },
+    "Inquire via Email": {
+      "en": "Inquire via Email",
+      "fr": "Nous écrire par E-mail"
+    },
+    "Follow Social Connects": {
+      "en": "Follow Social Connects",
+      "fr": "Nous suivre sur les réseaux"
+    },
+    "Contact Feedback Desk": {
+      "en": "Contact Feedback Desk",
+      "fr": "Nous envoyer un message"
+    },
+    "* Subject Headline": {
+      "en": "* Sujet / Motif"
+    },
+    "* Custom Message Details": {
+      "en": "* Détails de votre Message"
+    },
+    "Open Mon-Sun 11 AM - 10 PM": {
+      "en": "Open Mon-Sun 11 AM - 10 PM",
+      "fr": "Tous les jours 11h - 22h"
+    },
+    "Search our culinary creations...": {
+      "en": "Search our culinary creations...",
+      "fr": "Rechercher parmi nos créations..."
+    },
+    "Filter Vegetarian": {
+      "en": "Filter Vegetarian",
+      "fr": "Végétarien uniquement"
+    },
+    "Filter Gluten-Free": {
+      "en": "Filter Gluten-Free",
+      "fr": "Option sans gluten"
+    },
+    "No culinary creations match search details.": {
+      "en": "No culinary creations match search details.",
+      "fr": "Aucun régal ne correspond à votre recherche."
+    },
+    "What Our Guests Say": {
+      "en": "What Our Guests Say",
+      "fr": "Ce que nos convives en pensent"
+    },
+    "Customer Testimonials": {
+      "en": "Customer Testimonials",
+      "fr": "Témoignages de nos Invités"
+    },
+    "Upcoming Specials & Events": {
+      "en": "Upcoming Specials & Events",
+      "fr": "Prestations Spéciales & Événements"
+    },
+    "Reservation Policy": {
+      "en": "Reservation Policy",
+      "fr": "Conditions de Réservation"
+    },
+    "Make Reservation": {
+      "en": "Make Reservation",
+      "fr": "Réserver une table"
+    },
+    "Our most-loved dishes, prepared fresh every day.": {
+      "en": "Our most-loved dishes, prepared fresh every day.",
+      "fr": "Nos merveilles salées et sucrées plébiscitées, composées à la commande."
+    },
+    "Guest Favorites": {
+      "en": "Guest Favorites",
+      "fr": "Les Incontournables de la Carte"
+    },
+    "Book a Table": {
+      "en": "Book a Table",
+      "fr": "Réserver"
+    },
+    "Birthday": {
+      "en": "Birthday",
+      "fr": "Anniversaire"
+    },
+    "Anniversary": {
+      "en": "Anniversary",
+      "fr": "Célébration / Fierté"
+    },
+    "Date Night": {
+      "en": "Date Night",
+      "fr": "Tête-à-tête Romantique"
+    },
+    "Business": {
+      "en": "Business",
+      "fr": "Dîner d'Affaires"
+    },
+    "Other": {
+      "en": "Other",
+      "fr": "Autre Événement"
+    },
+    "Send Message": {
+      "en": "Send Message",
+      "fr": "Transmettre le Message"
+    },
+    "Sending inquiry feedback...": {
+      "en": "Sending inquiry feedback...",
+      "fr": "Envoi de votre message..."
+    },
+    "All Categories": {
+      "en": "All Categories",
+      "fr": "Toute l'ardoise"
+    },
+    "Chef Special": {
+      "en": "Chef Special",
+      "fr": "Spécialité du Chef"
+    },
+    "Vegetarian": {
+      "en": "Vegetarian",
+      "fr": "Végétarien"
+    },
+    "Gluten Free": {
+      "en": "Gluten Free",
+      "fr": "Sans Gluten"
+    },
+    "Popular": {
+      "en": "Popular",
+      "fr": "Populaire"
+    },
+    "Non-Alcoholic": {
+      "en": "Non-Alcoholic",
+      "fr": "Sans Alcool"
+    },
+    "Starters": {
+      "en": "Starters",
+      "fr": "Entrées"
+    },
+    "Mains": {
+      "en": "Mains",
+      "fr": "Plats de Résistance"
+    },
+    "Inquiry Submitted!": {
+      "en": "Inquiry Submitted!",
+      "fr": "Incursion Envoyée avec Succès !"
+    },
+    "Send Another Inquiry Message": {
+      "en": "Send Another Inquiry Message",
+      "fr": "Envoyer un autre message"
+    },
+    "Open in Google Map navigation": {
+      "en": "Open in Google Map navigation",
+      "fr": "Tracer l'itinéraire sur carte google"
+    },
+    "Last Updated": {
+      "en": "Last Updated",
+      "fr": "Dernière Mise à Jour"
+    },
+    "TABLE BOOKINGS": {
+      "en": "TABLE BOOKINGS",
+      "fr": "RÉSERVATION"
+    },
+    "FEEDBACK DESK": {
+      "en": "FEEDBACK DESK",
+      "fr": "CONTACT"
+    },
+    "THE URBAN FORK BRAND": {
+      "en": "THE URBAN FORK BRAND",
+      "fr": "LA MARQUE THE URBAN FORK"
+    },
+    "OUR FOUNDATION": {
+      "en": "OUR FOUNDATION",
+      "fr": "NOTRE ENGAGEMENT"
+    },
+    "Why Dine with Us": {
+      "en": "Why Dine with Us",
+      "fr": "Pourquoi nous choisir ?"
+    },
+    "Online Reservation Desk": {
+      "en": "Online Reservation Desk",
+      "fr": "Réservation de Table en Ligne Desktop"
+    },
+    "Success! Spot requested": {
+      "en": "Success! Spot requested",
+      "fr": "Succès ! Table demandée."
+    },
+    "Request Another Table Booking": {
+      "en": "Request Another Table Booking",
+      "fr": "Faire une autre demande de réservation"
+    },
+    "Standard 120-minute dining table block limits.": {
+      "en": "Standard 120-minute dining table block limits.",
+      "fr": "Durée standard d'occupation de la table est de 120 minutes."
+    },
+    "15 minutes grace period hold before automatic cancellation.": {
+      "en": "15 minutes grace period hold before automatic cancellation.",
+      "fr": "La réservation est conservée 15 minutes en cas de retard."
+    },
+    "Opening Hours": {
+      "en": "Opening Hours",
+      "fr": "Heures d'ouverture"
+    },
+    "All Menu": {
+      "en": "All Menu",
+      "fr": "Toute la Carte"
+    },
+    "Search dishes...": {
+      "en": "Search dishes...",
+      "fr": "Rechercher un plat..."
+    },
+    "Dietary filters:": {
+      "en": "Dietary filters:",
+      "fr": "Filtres régimes :"
+    },
+    "No dishes match your active search terms or filters.": {
+      "en": "No dishes match your active search terms or filters.",
+      "fr": "Aucun plat ne correspond à vos critères."
+    },
+    "Clear All Active Selection filters": {
+      "en": "Clear All Active Selection filters",
+      "fr": "Effacer tous les filtres"
+    },
+    "Allergens:": {
+      "en": "Allergens:",
+      "fr": "Allergènes :"
+    },
+    "Click to inspect view": {
+      "en": "Click to inspect view",
+      "fr": "Cliquer pour agrandir"
+    },
+    "The Urban Fork": {
+      "en": "The Urban Fork",
+      "fr": "La Fourchette Urbaine"
+    },
+    "Whether you are planning a corporate function, curious about our seasonal ingredients list, or have special dietary concerns, let us know!": {
+      "en": "Whether you are planning a corporate function, curious about our seasonal ingredients list, or have special dietary concerns, let us know!",
+      "fr": "Que vous planifiez un événement d'entreprise, souhaitiez en savoir plus sur nos ingrédients de saison ou ayez des exigences alimentaires, dites-le nous !"
+    },
+    "Write down your inquiry...": {
+      "en": "Write down your inquiry...",
+      "fr": "Saisissez les détails de votre demande..."
+    },
+    "* Phone Number": {
+      "en": "* Phone Number",
+      "fr": "* Numéro de Téléphone"
+    },
+    "* Target Date": {
+      "en": "* Target Date",
+      "fr": "* Date Souhaitée"
+    },
+    "* Target Time Slot": {
+      "en": "* Target Time Slot",
+      "fr": "* Heure Souhaitée"
+    },
+    "Casual Dinner / Socializing": {
+      "en": "Casual Dinner / Socializing",
+      "fr": "Dîner décontracté / Sortie"
+    },
+    "Birthday Celebration": {
+      "en": "Birthday Celebration",
+      "fr": "Repas d'Anniversaire"
+    },
+    "Wedding Anniversary": {
+      "en": "Wedding Anniversary",
+      "fr": "Anniversaire de Mariage"
+    },
+    "Corporate / Business Dining": {
+      "en": "Corporate / Business Dining",
+      "fr": "Repas d'Affaires / Entreprise"
+    },
+    "Romantic Date Night": {
+      "en": "Romantic Date Night",
+      "fr": "Repas en Amoureux"
+    },
+    "Notes or Special Requirements (Allergies, high chair, etc.)": {
+      "en": "Notes or Special Requirements (Allergies, high chair, etc.)",
+      "fr": "Remarques ou demandes particulières (Allergies, chaise haute...)"
+    },
+    "Submitting table inquiry...": {
+      "en": "Submitting table inquiry...",
+      "fr": "Réservation en cours..."
+    },
+    "Request Table Booking": {
+      "en": "Request Table Booking",
+      "fr": "Confirmer la demande de Table"
+    },
+    "Closed": {
+      "en": "Closed",
+      "fr": "Fermé"
+    },
+    "Monday - Thursday: 11:00 AM - 10:00 PM": {
+      "en": "Monday - Thursday: 11:00 AM - 10:00 PM",
+      "fr": "Lundi - Jeudi : 11:00 - 22:00"
+    },
+    "Friday - Saturday: 10:00 AM - 11:00 PM": {
+      "en": "Friday - Saturday: 10:00 AM - 11:00 PM",
+      "fr": "Vendredi - Samedi : 10:00 - 23:00"
+    },
+    "Sunday: 10:00 AM - 09:00 PM": {
+      "en": "Sunday: 10:00 AM - 09:00 PM",
+      "fr": "Dimanche : 10:00 - 21:00"
+    },
+    "Direct Sitemap": {
+      "en": "Direct Sitemap",
+      "fr": "Plan du Site"
+    },
+    "Front Desk Concierge": {
+      "en": "Front Desk Concierge",
+      "fr": "Conciergerie d'Accueil"
+    },
+    "All rights reserved under local hospitality protocols.": {
+      "en": "All rights reserved under local hospitality protocols.",
+      "fr": "Tous droits réservés selon les protocoles d'accueil locaux."
+    },
+    "Navigation Menu": {
+      "en": "Navigation Menu",
+      "fr": "Menu de Navigation"
+    }
+  }
+}

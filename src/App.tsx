@@ -32,6 +32,8 @@ import { getImgUrl } from "./utils/imageMap";
 import { RestaurantData, MenuItem, UserReservation, UserContactMessage } from "./types";
 import restaurantData from "./restaurant-data.json";
 
+const CONFIG_STORAGE_KEY = "restaurant_config_override";
+
 export default function App() {
   const [data, setData] = useState<RestaurantData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -119,6 +121,20 @@ export default function App() {
   // Image lightbox
   const [lightboxImg, setLightboxImg] = useState<{ src: string; caption: string } | null>(null);
 
+  const applyRestaurantData = (jsonData: RestaurantData) => {
+    setData(jsonData);
+    setRawJson(JSON.stringify(jsonData, null, 2));
+
+    // Preset color variables dynamically
+    if (jsonData.site?.theme) {
+      document.documentElement.style.setProperty("--primary", jsonData.site.theme.primaryColor);
+      document.documentElement.style.setProperty("--secondary", jsonData.site.theme.secondaryColor);
+      document.documentElement.style.setProperty("--accent", jsonData.site.theme.accentColor);
+      document.documentElement.style.setProperty("--text", jsonData.site.theme.textColor);
+      document.documentElement.style.setProperty("--bg", jsonData.site.theme.backgroundColor);
+    }
+  };
+
   // Load configuration and interactive lists from back-end server
   const loadConfig = async () => {
     try {
@@ -130,20 +146,11 @@ export default function App() {
         if (!res.ok) throw new Error("Could not load restaurant database configuration");
         jsonData = await res.json();
       } catch {
-        jsonData = restaurantData as RestaurantData;
+        const savedConfig = localStorage.getItem(CONFIG_STORAGE_KEY);
+        jsonData = savedConfig ? JSON.parse(savedConfig) : restaurantData as RestaurantData;
       }
 
-      setData(jsonData);
-      setRawJson(JSON.stringify(jsonData, null, 2));
-
-      // Preset color variables dynamically
-      if (jsonData.site?.theme) {
-        document.documentElement.style.setProperty("--primary", jsonData.site.theme.primaryColor);
-        document.documentElement.style.setProperty("--secondary", jsonData.site.theme.secondaryColor);
-        document.documentElement.style.setProperty("--accent", jsonData.site.theme.accentColor);
-        document.documentElement.style.setProperty("--text", jsonData.site.theme.textColor);
-        document.documentElement.style.setProperty("--bg", jsonData.site.theme.backgroundColor);
-      }
+      applyRestaurantData(jsonData);
     } catch (e: any) {
       setError(e.message);
     } finally {
@@ -209,31 +216,30 @@ export default function App() {
   // Submit revised live configuration to backend
   const saveConfig = async (updatedData: RestaurantData) => {
     try {
+      let confirmedConfig = updatedData;
+
       const response = await fetch("/api/config", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedData)
       });
+
       if (!response.ok) {
         throw new Error("Unable to save changed details back to JSON database");
       }
-      const confirmed = await response.json();
-      setData(confirmed.config);
-      setRawJson(JSON.stringify(confirmed.config, null, 2));
 
-      // Refresh styling constants
-      if (confirmed.config.site?.theme) {
-        document.documentElement.style.setProperty("--primary", confirmed.config.site.theme.primaryColor);
-        document.documentElement.style.setProperty("--secondary", confirmed.config.site.theme.secondaryColor);
-        document.documentElement.style.setProperty("--accent", confirmed.config.site.theme.accentColor);
-        document.documentElement.style.setProperty("--text", confirmed.config.site.theme.textColor);
-        document.documentElement.style.setProperty("--bg", confirmed.config.site.theme.backgroundColor);
-      }
+      const confirmed = await response.json();
+      confirmedConfig = confirmed.config;
+      localStorage.removeItem(CONFIG_STORAGE_KEY);
+      applyRestaurantData(confirmedConfig);
 
       setAdminSuccessMsg("JSON configuration saved & applied successfully! Website updated.");
       setTimeout(() => setAdminSuccessMsg(null), 5000);
     } catch (err: any) {
-      alert("Error saving: " + err.message);
+      localStorage.setItem(CONFIG_STORAGE_KEY, JSON.stringify(updatedData));
+      applyRestaurantData(updatedData);
+      setAdminSuccessMsg("JSON configuration saved in this browser. Vercel cannot write back to src/restaurant-data.json without a database/API.");
+      setTimeout(() => setAdminSuccessMsg(null), 7000);
     }
   };
 

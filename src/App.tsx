@@ -30,6 +30,7 @@ import {
 } from "lucide-react";
 import { getImgUrl } from "./utils/imageMap";
 import { RestaurantData, MenuItem, UserReservation, UserContactMessage } from "./types";
+import restaurantData from "./restaurant-data.json";
 
 export default function App() {
   const [data, setData] = useState<RestaurantData | null>(null);
@@ -122,9 +123,16 @@ export default function App() {
   const loadConfig = async () => {
     try {
       setLoading(true);
-      const res = await fetch("/api/config");
-      if (!res.ok) throw new Error("Could not load restaurant database configuration");
-      const jsonData = await res.json();
+      let jsonData: RestaurantData;
+
+      try {
+        const res = await fetch("/api/config");
+        if (!res.ok) throw new Error("Could not load restaurant database configuration");
+        jsonData = await res.json();
+      } catch {
+        jsonData = restaurantData as RestaurantData;
+      }
+
       setData(jsonData);
       setRawJson(JSON.stringify(jsonData, null, 2));
 
